@@ -9,7 +9,7 @@ app:
       port: 80
     ingress:
       enabled: true
-      host: frontend.example.com
+      host:
       path: /
       pathType: Prefix
   backend:

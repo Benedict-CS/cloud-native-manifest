@@ -2,8 +2,8 @@ app:
   frontend:
     replicaCount: 1
     image:
-      repo: ghcr.io/benedict-cs/k8s-hw3-frontend
-      tag: latest
+      repo: ghcr.io/benedict-cs/k8s-hw3-backend
+      tag: 02c9548571fc940c784bd1aeedf73fe98a5a48be
     service:
       type: LoadBalancer
       port: 80
@@ -16,15 +16,15 @@ app:
     replicaCount: 1
     image:
       repo: ghcr.io/benedict-cs/k8s-hw3-backend
-      tag: latest
+      tag: 02c9548571fc940c784bd1aeedf73fe98a5a48be
     service:
       type: ClusterIP
       port: 8888
   db:
     replicaCount: 1
     image:
-      repo: mongo
-      tag: latest
+      repo: ghcr.io/benedict-cs/k8s-hw3-backend
+      tag: 02c9548571fc940c784bd1aeedf73fe98a5a48be
     service:
       type: ClusterIP
       port: 27017

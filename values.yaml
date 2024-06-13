@@ -24,7 +24,7 @@ app:
     replicaCount: 1
     image:
       repo: mongo
-      tag: 740f2656dc3596d6de33d81b35f8999c210f5c52
+      tag: latest
     service:
       type: ClusterIP
       port: 27017

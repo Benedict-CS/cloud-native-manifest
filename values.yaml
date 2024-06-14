@@ -3,7 +3,7 @@ app:
     replicaCount: 1
     image:
       repo: ghcr.io/benedict-cs/k8s-hw3-frontend
-      tag: a0fb346aaad431be9db897253b31002d1d3f8519
+      tag: 200a7916491819be8be2f5f09a1a74af66b26bf2
     service:
       type: LoadBalancer
       port: 80
@@ -18,7 +18,7 @@ app:
     replicaCount: 1
     image:
       repo: ghcr.io/benedict-cs/k8s-hw3-backend
-      tag: a0fb346aaad431be9db897253b31002d1d3f8519
+      tag: 200a7916491819be8be2f5f09a1a74af66b26bf2
     service:
       type: ClusterIP
       port: 8888
